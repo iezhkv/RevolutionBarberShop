@@ -212,7 +212,7 @@ p {
     
   }
   .workingTime td {
-    font-size: 30px;
+    font-size: 25px;
     -webkit-text-stroke-width: 0.4px;
     -webkit-text-stroke-color: #C30004;
   }
@@ -390,3 +390,26 @@ li {
   
 }
 
+.eapps-instagram-feed-posts-grid-load-more-visible.eapps-instagram-feed-posts-grid-load-more {
+  font-size: 15px;
+  margin: 10px;
+  padding: 5px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+
+  white-space: normal;
+  color: #00324E;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: #C30004;
+  font-family: 'Moyenage', arial;
+  border: 1px solid #00324E;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, inset 17px 12px 50px -30px rgb(0 0 0 / 0%);
+  box-shadow: 0px 10px 13px -7px #000000, inset 17px 12px 50px -30px rgb(0 0 0 / 0%);
+  opacity: 1;
+
+}

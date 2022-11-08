@@ -26,7 +26,7 @@ function removeElementsByClass(className){
 
 
 function modifyBtn() {
-let loadMoreBtn = document.getElementsByClassName("eapps-instagram-feed-posts-grid-load-more-text eapps-instagram-feed-posts-grid-load-more-text-visible");
+let loadMoreBtn = document.getElementsByClassName("eapps-instagram-feed-posts-grid-load-more-visible");
 let btnElement = loadMoreBtn[0];
 btnElement.textContent = "Покажи още";
 
@@ -113,10 +113,19 @@ function checkIfOpened() {
     console.log(`${timeInMinutes} minutes science 00:00`);
     console.log(`${day} day of the week`);
 
-    //Check if day is not Sunday
-    if(day != 0) {
-    //check between 09:00 and 19:30
+
+    if (day >=1 && day <=5 ) {
+
         if(timeInMinutes >= (9*60)+0 && timeInMinutes <=(19*60)+00) {
+            h1Element.textContent = "ОТВОРЕНО";
+            h1Element.style.backgroundColor = "green";
+        }
+        else {
+            h1Element.textContent = "ЗАТВОРЕНО";
+        }
+    }
+    else if (day == 6) {
+        if(timeInMinutes >= (9*60)+30 && timeInMinutes <=(16*60)+00) {
             h1Element.textContent = "ОТВОРЕНО";
             h1Element.style.backgroundColor = "green";
         }
@@ -127,5 +136,5 @@ function checkIfOpened() {
     else {
         h1Element.textContent = "ЗАТВОРЕНО";
     }
+    
 }
-
