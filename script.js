@@ -116,7 +116,7 @@ function checkIfOpened() {
 
     if (day >=1 && day <=5 ) {
 
-        if(timeInMinutes >= (9*60)+0 && timeInMinutes <=(19*60)+00) {
+        if(timeInMinutes >= (9*60)+30 && timeInMinutes <=(18*60)+0) {
             h1Element.textContent = "ОТВОРЕНО";
             h1Element.style.backgroundColor = "green";
         }
